@@ -86,6 +86,10 @@ hooks:
             touch web/var/.platform.installed
         fi
         app/console --env=$SYMFONY_ENV cache:clear
+
+        # Indexing done on each deploy. Only necessary on first
+        # deploy, there's room to improve here as this is not
+        # optimal and will lead to trouble on large instances.
         app/console --env=prod ezplatform:solr_create_index 10
 
 # The configuration of scheduled execution.
