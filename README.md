@@ -1,4 +1,4 @@
-# eZ Platform v1.13 + Solr 6.6 configuration for eZ Platform Cloud (and Platform.sh)
+# eZ Platform v1.13 + Solr 6.6 configuration for eZ Platform Cloud and Platform.sh hosting environments
 
 An example configuration for running eZ Platform using the [Solr Search Engine Bundle](https://github.com/ezsystems/ezplatform-solr-search-engine). Used successfully with Solr 6.6 and eZ Platform 1.13 in December 2017.
 
