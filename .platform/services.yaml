@@ -1,0 +1,14 @@
+mysqldb:
+    type: mysql:10.0
+    disk: 2048
+
+solrsearch:
+    type: solr:6.6
+    disk: 1024
+    configuration:
+        cores:
+            maincore:
+                conf_dir: !archive "solr/maincore"
+        endpoints:
+            main:
+                core: maincore
